@@ -4,12 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## 2.14.0 (September 23rd, 2026)
+## 2.13.1 (September 23rd, 2026)
 
 ### Fixed
 
 * Calculate `Content-Length` from the remaining bytes when a file is passed as `content=`, respecting its current position.
   ([#1214](https://github.com/pydantic/httpx2/pull/1214))
+* Stop the sync WebSocket keepalive thread cleanly when a ping races with connection shutdown.
+  ([#1228](https://github.com/pydantic/httpx2/pull/1228))
 
 ## 2.13.0 (September 14th, 2026)
 
